@@ -7,13 +7,17 @@ package chapter01;
  * Project:HeadFirstDesignPatterns
  */
 public class RedheadDuck extends Duck implements Flyable{
+    public RedheadDuck(FlyBehaviour flyBehaviour, QuackBehaviour quackBehaviour) {
+        super(flyBehaviour, quackBehaviour);
+    }
+
     @Override
     void display() {
-        System.out.println(MyUtils.getCurrentTime() + "RedheadDuck.display 红色的头");
+        System.out.println(chapter01.MyUtils.getCurrentTime() + "RedheadDuck.display 红色的头");
     }
 
     @Override
     public void fly() {
-        System.out.println(MyUtils.getCurrentTime() + "RedheadDuck.fly");
+        System.out.println(chapter01.MyUtils.getCurrentTime() + "RedheadDuck.fly");
     }
 }

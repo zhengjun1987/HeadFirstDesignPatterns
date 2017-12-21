@@ -7,10 +7,13 @@ package chapter01;
  * Project:HeadFirstDesignPatterns
  */
 public class DecoyDuck extends Duck {
-    @Override
-    void quack() {
-        //do nothing
+    public DecoyDuck(FlyBehaviour flyBehaviour, QuackBehaviour quackBehaviour) {
+        super(flyBehaviour, quackBehaviour);
     }
+//    @Override
+//    void quack() {
+//        //do nothing
+//    }
 
 //    @Override
 //    void fly() {
@@ -19,6 +22,6 @@ public class DecoyDuck extends Duck {
 
     @Override
     void display() {
-        System.out.println(MyUtils.getCurrentTime() + "DecoyDuck.display "+getClass().getSimpleName());
+        System.out.println(chapter01.MyUtils.getCurrentTime() + "DecoyDuck.display "+getClass().getSimpleName());
     }
 }

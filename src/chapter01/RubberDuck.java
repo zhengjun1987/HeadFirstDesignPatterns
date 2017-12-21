@@ -7,10 +7,13 @@ package chapter01;
  * Project:HeadFirstDesignPatterns
  */
 public class RubberDuck extends Duck {
-    @Override
-    void quack() {
-        System.out.println(MyUtils.getCurrentTime() + "RubberDuck.quack 橡皮鸭吱吱叫");
+    public RubberDuck(FlyBehaviour flyBehaviour, QuackBehaviour quackBehaviour) {
+        super(flyBehaviour, quackBehaviour);
     }
+//    @Override
+//    void quack() {
+//        System.out.println(MyUtils.getCurrentTime() + "RubberDuck.quack 橡皮鸭吱吱叫");
+//    }
 
     @Override
     void display() {

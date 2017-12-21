@@ -7,13 +7,18 @@ package chapter01;
  * Project:HeadFirstDesignPatterns
  */
 public class MallardDuck extends Duck implements Flyable{
+
+    public MallardDuck(FlyBehaviour flyBehaviour, QuackBehaviour quackBehaviour) {
+        super(flyBehaviour, quackBehaviour);
+    }
+
     @Override
     void display() {
-        System.out.println(MyUtils.getCurrentTime() + "MallardDuck.display 绿色的头");
+        System.out.println(chapter01.MyUtils.getCurrentTime() + "MallardDuck.display 绿色的头");
     }
 
     @Override
     public void fly() {
-        System.out.println(MyUtils.getCurrentTime() + "MallardDuck.fly");
+        System.out.println(chapter01.MyUtils.getCurrentTime() + "MallardDuck.fly");
     }
 }
