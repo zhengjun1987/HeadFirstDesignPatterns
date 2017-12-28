@@ -27,7 +27,5 @@ public class BeverageTest {
 //        2017-12-28 15:55:45:299  Would you like milk and sugar with your coffe?
 //        Y
 //        2017-12-28 15:55:50:321  Coffe.addSugarAndMilk
-
-        System.out.println(MyUtils.getCurrentTime() +Integer.toBinaryString(19870802));
     }
 }
