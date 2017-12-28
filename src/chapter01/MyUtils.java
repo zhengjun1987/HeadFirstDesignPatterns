@@ -13,4 +13,11 @@ public class MyUtils {
     public static String getCurrentTime(){
         return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS  ").format(new Date());
     }
+
+    public static <T> T requireNonNull(T t){
+        if (t == null) {
+            throw new NullPointerException();
+        }
+        return t;
+    }
 }

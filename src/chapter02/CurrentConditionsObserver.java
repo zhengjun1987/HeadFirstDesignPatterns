@@ -1,5 +1,7 @@
 package chapter02;
 
+import chapter01.MyUtils;
+
 import java.util.Observable;
 import java.util.Observer;
 

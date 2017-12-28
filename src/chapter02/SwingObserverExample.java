@@ -1,5 +1,7 @@
 package chapter02;
 
+import chapter01.MyUtils;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

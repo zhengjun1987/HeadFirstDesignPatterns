@@ -1,5 +1,7 @@
 package chapter02;
 
+import chapter01.MyUtils;
+
 /**
  * Author:Zheng Jun
  * E-mail:zhengjun1987@outlook.com

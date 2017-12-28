@@ -12,7 +12,7 @@ public class RubberDuck extends Duck {
     }
 //    @Override
 //    void quack() {
-//        System.out.println(MyUtils.getCurrentTime() + "RubberDuck.quack 橡皮鸭吱吱叫");
+//        System.out.println(chapter01.MyUtils.getCurrentTime() + "RubberDuck.quack 橡皮鸭吱吱叫");
 //    }
 
     @Override

@@ -24,7 +24,7 @@ public abstract class Duck {
     }
 
     //    void quack(){
-//        System.out.println(MyUtils.getCurrentTime() + "Duck.quack");
+//        System.out.println(chapter01.MyUtils.getCurrentTime() + "Duck.quack");
 //    };
 
     void performQuack(){
@@ -35,7 +35,7 @@ public abstract class Duck {
     }
 
     void swim(){
-        System.out.println(chapter01.MyUtils.getCurrentTime() + "Duck.swim");
+        System.out.println(MyUtils.getCurrentTime() + "Duck.swim");
     }
 
     abstract void display();

@@ -2,7 +2,6 @@ package chapter04;
 
 import chapter01.MyUtils;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
