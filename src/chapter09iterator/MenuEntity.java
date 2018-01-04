@@ -3,6 +3,7 @@ package chapter09iterator;
 import chapter01.MyUtils;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.function.Consumer;
 
 /**
@@ -72,5 +73,10 @@ public class MenuEntity extends MenuComponent {
         for (MenuComponent menuComponent : menuComponents) {
             menuComponent.print();
         }
+    }
+
+    @Override
+    Iterator<? extends MenuComponent> createIterator() {
+        return new CompositeIterator(menuComponents.iterator());
     }
 }

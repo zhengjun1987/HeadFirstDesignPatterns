@@ -24,7 +24,24 @@ public class MenuTest {
         allMenus.add(pancakehouseMenu);
         allMenus.add(dinersMenu);
         allMenus.add(cafesMenu);
-        allMenus.print();
+
+
+        Waitress waitress = new Waitress(allMenus);
+//        waitress.printMenu();
+//        System.out.println(MyUtils.getCurrentTime() +"--------------------------------------");
+        waitress.printVegetarianMenu();
+//        2018-01-04 11:26:02:124    K&B's Pancake Breakfast(v), 2.99
+//        2018-01-04 11:26:02:125      -- Pancake with scrambled eggs,and toast
+//        2018-01-04 11:26:02:126    BlueBerry Pancake Breakfast(v), 3.49
+//        2018-01-04 11:26:02:126      -- Pancake with fresh blueberries
+//        2018-01-04 11:26:02:126    Waffles(v), 3.59
+//        2018-01-04 11:26:02:126      -- Waffles,with your choice of blueberries or strawberries
+//        2018-01-04 11:26:02:126    Vegetarian BLT(v), 2.99
+//        2018-01-04 11:26:02:126      -- (Fakin') Bacon with lettuce & tomatos on whole wheat
+//        2018-01-04 11:26:02:126    Burrito(v), 4.29
+//        2018-01-04 11:26:02:127      -- A large burrito,with whole pinto beans,salsa,guacamole
+//        2018-01-04 11:26:02:127    Veggie Burger and Air Fries(v), 3.99
+//        2018-01-04 11:26:02:127      -- Veggie burger and a whole wheat bun,lettuce,tomato,and fries
     }
 }
 //  2018-1-3 11:22:25版本
@@ -73,7 +90,6 @@ public class MenuTest {
 //        2018-01-03 16:52:43:903  Veggie Burger and Air Fries, 3.99 -- Veggie burger and a whole wheat bun,lettuce,tomato,and fries
 
 //  2018-1-3 18:13:34版本
-//
 //        2018-01-03 18:12:23:451  ALL MENUS, All menus combined!
 //        2018-01-03 18:12:23:452  -----------------------------------
 //        2018-01-03 18:12:23:452  PANCAKE HOUSE MENU, Breakfast

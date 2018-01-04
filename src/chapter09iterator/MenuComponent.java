@@ -1,5 +1,7 @@
 package chapter09iterator;
 
+import java.util.Iterator;
+
 /**
  * Author: Zheng Jun
  * Mail:zhengjun1987@outlook.com
@@ -14,4 +16,5 @@ public abstract class MenuComponent {
     abstract double getPrice();
     abstract boolean isVegetarian();
     abstract void print();
+    abstract Iterator<? extends MenuComponent> createIterator();
 }

@@ -2,6 +2,8 @@ package chapter09iterator;
 
 import chapter01.MyUtils;
 
+import java.util.Iterator;
+
 /**
  * Author: Zheng Jun
  * Mail:zhengjun1987@outlook.com
@@ -51,6 +53,11 @@ public class MenuItem extends MenuComponent {
     void print() {
         System.out.println(MyUtils.getCurrentTime() +"  "+getName() + (isVegetarian()?"(v)":"")+", "+getPrice());
         System.out.println(MyUtils.getCurrentTime() +"    -- "+getDescription());
+    }
+
+    @Override
+    Iterator<? extends MenuComponent> createIterator() {
+        throw new UnsupportedOperationException();
     }
 
     double getPrice() {

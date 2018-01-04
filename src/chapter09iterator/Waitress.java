@@ -1,5 +1,9 @@
 package chapter09iterator;
 
+import jdk.internal.org.objectweb.asm.util.Printer;
+
+import java.util.Iterator;
+
 /**
  * Author: Zheng Jun
  * Mail:zhengjun1987@outlook.com
@@ -57,4 +61,17 @@ public class Waitress {
 //            }
 //        }
 //    }
+    void printVegetarianMenu(){
+        Iterator<? extends MenuComponent> iterator = menuComponent.createIterator();
+        while (iterator.hasNext()) {
+            Iterator<? extends MenuComponent> iterator1 = iterator.next().createIterator();
+            while (iterator1.hasNext()) {
+                MenuComponent menuComponent = iterator1.next();
+                if (menuComponent.isVegetarian()) {
+                    menuComponent.print();
+                }
+            }
+
+        }
+    }
 }
