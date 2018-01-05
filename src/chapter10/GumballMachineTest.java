@@ -9,7 +9,7 @@ import chapter01.MyUtils;
  */
 public class GumballMachineTest {
     public static void main(String[] args) {
-        GumballMachine gumballMachine = new GumballMachine(5);
+        GumballMachine gumballMachine = new GumballMachine(5,"Washington D.C.");
         System.out.println(MyUtils.getCurrentTime() + gumballMachine);
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();

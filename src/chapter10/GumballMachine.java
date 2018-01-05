@@ -23,18 +23,20 @@ public class GumballMachine {
     MachineState winnerState;
 
     int count = 0;
+    String location;
 
     public void setMachineState(MachineState machineState) {
         this.machineState = machineState;
     }
 
-    public GumballMachine(int count) {
+    public GumballMachine(int count, String location) {
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
         soldState = new SoldState(this);
         soldOutState = new SoldOutState(this);
         winnerState = new WinnerState(this);
         this.count = count;
+        this.location = location;
         if (count > 0) {
 //            state = NO_QUATER;
             machineState = noQuarterState;
@@ -161,6 +163,7 @@ public class GumballMachine {
         return "GumballMachine{" +
                 "state=" + machineState.getClass().getSimpleName() +
                 ", count=" + count +
+                ", location=" + location +
                 '}';
     }
 }
