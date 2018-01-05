@@ -33,7 +33,7 @@ public class GumballMachine {
         hasQuarterState = new HasQuarterState(this);
         soldState = new SoldState(this);
         soldOutState = new SoldOutState(this);
-        winnerState=new WinnerState(this);
+        winnerState = new WinnerState(this);
         this.count = count;
         if (count > 0) {
 //            state = NO_QUATER;
@@ -145,9 +145,9 @@ public class GumballMachine {
 //        }
     }
 
-    void release(){
+    void release() {
         if (count > 0) {
-            System.out.println(MyUtils.getCurrentTime() +"Gumball released!");
+            System.out.println(MyUtils.getCurrentTime() + "Gumball released!");
             count--;
         }
     }

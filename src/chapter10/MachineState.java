@@ -7,7 +7,10 @@ package chapter10;
  */
 public interface MachineState {
     void insertQuarter();
+
     void ejectQuarter();
+
     void turnCrank();
+
     void dispense();
 }

@@ -10,20 +10,20 @@ import chapter01.MyUtils;
 public class GumballMachineTest {
     public static void main(String[] args) {
         GumballMachine gumballMachine = new GumballMachine(5);
-        System.out.println(MyUtils.getCurrentTime() +gumballMachine);
+        System.out.println(MyUtils.getCurrentTime() + gumballMachine);
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
-        System.out.println(MyUtils.getCurrentTime() +gumballMachine);
+        System.out.println(MyUtils.getCurrentTime() + gumballMachine);
         gumballMachine.insertQuarter();
         gumballMachine.ejectQuarter();
         gumballMachine.turnCrank();
-        System.out.println(MyUtils.getCurrentTime() +gumballMachine);
+        System.out.println(MyUtils.getCurrentTime() + gumballMachine);
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
         gumballMachine.ejectQuarter();
-        System.out.println(MyUtils.getCurrentTime() +gumballMachine);
+        System.out.println(MyUtils.getCurrentTime() + gumballMachine);
         gumballMachine.insertQuarter();
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
@@ -31,7 +31,7 @@ public class GumballMachineTest {
         gumballMachine.turnCrank();
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
-        System.out.println(MyUtils.getCurrentTime() +gumballMachine);
+        System.out.println(MyUtils.getCurrentTime() + gumballMachine);
     }
 }
 //        2018-01-04 15:17:35:745  GumballMachine{state=1, count=5}
@@ -62,7 +62,6 @@ public class GumballMachineTest {
 //        2018-01-04 15:17:35:749  You cannot insert a quarter,sold out!
 //        2018-01-04 15:17:35:749  No quarter inserted!
 //        2018-01-04 15:17:35:749  GumballMachine{state=0, count=0}
-
 
 
 //        2018-01-04 17:41:58:499  GumballMachine{state=NoQuarterState, count=5}
@@ -100,7 +99,6 @@ public class GumballMachineTest {
 //        2018-01-04 17:41:58:504  No quarter inserted!
 //        2018-01-04 17:41:58:504  No gumball dispensed!
 //        2018-01-04 17:41:58:505  GumballMachine{state=SoldOutState, count=0}
-
 
 
 //        2018-01-04 18:29:51:328  GumballMachine{state=NoQuarterState, count=5}

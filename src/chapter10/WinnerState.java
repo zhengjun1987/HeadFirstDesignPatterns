@@ -33,13 +33,13 @@ public class WinnerState implements MachineState {
 
     @Override
     public void dispense() {
-        System.out.println(MyUtils.getCurrentTime() +"YOU ARE A WINNER!You got two gumballs for your quarter!");
+        System.out.println(MyUtils.getCurrentTime() + "YOU ARE A WINNER!You got two gumballs for your quarter!");
         gumballMachine.release();
-        if (gumballMachine.getCount()==0) {
+        if (gumballMachine.getCount() == 0) {
             gumballMachine.setMachineState(gumballMachine.getSoldOutState());
         } else {
             gumballMachine.release();
-            if (gumballMachine.getCount()==0){
+            if (gumballMachine.getCount() == 0) {
                 gumballMachine.setMachineState(gumballMachine.getSoldOutState());
             } else {
                 gumballMachine.setMachineState(gumballMachine.getNoQuarterState());

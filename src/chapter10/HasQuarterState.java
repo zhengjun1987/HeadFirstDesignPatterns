@@ -33,7 +33,7 @@ public class HasQuarterState implements MachineState {
     public void turnCrank() {
         System.out.println(MyUtils.getCurrentTime() + "You turned!");
         int i = random.nextInt(10);
-        if (i==0 && gumballMachine.getCount()>1) {
+        if (i == 0 && gumballMachine.getCount() > 1) {
             gumballMachine.setMachineState(gumballMachine.getWinnerState());
         } else {
             gumballMachine.setMachineState(gumballMachine.getSoldState());

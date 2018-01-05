@@ -34,10 +34,10 @@ public class SoldState implements MachineState {
     public void dispense() {
         System.out.println(MyUtils.getCurrentTime() + "A gumball coming!");
         gumballMachine.release();
-        if (gumballMachine.getCount()>0) {
+        if (gumballMachine.getCount() > 0) {
             gumballMachine.setMachineState(gumballMachine.getNoQuarterState());
         } else {
-            System.out.println(MyUtils.getCurrentTime() +"Oops,out of gumballs!");
+            System.out.println(MyUtils.getCurrentTime() + "Oops,out of gumballs!");
             gumballMachine.setMachineState(gumballMachine.getSoldOutState());
         }
     }
