@@ -1,22 +1,22 @@
 package chapter12;
 
-import chapter01.MyUtils;
-
 /**
- * Author: Zheng Jun
- * Mail:zhengjun1987@outlook.com
- * Date: 2018/1/5 15:01
+ * Author:Zheng Jun
+ * E-mail:zhengjun1987@outlook.com
+ * Date:2018/1/6
+ * Project:HeadFirstDesignPatterns
  */
-public class RubberDuck implements Quackable {
-    Observable observable;
+public class GooseAdapter implements Quackable {
+    Goose goose;
+    Observable observable = new Observable(this);
 
-    public RubberDuck() {
-        observable= new Observable(this);
+    public GooseAdapter(Goose goose) {
+        this.goose = goose;
     }
 
     @Override
     public void quack() {
-        System.out.println(MyUtils.getCurrentTime() +"Squeak");
+        goose.honk();
         notifyAllObservers();
     }
 

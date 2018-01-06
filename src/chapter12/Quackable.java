@@ -5,6 +5,12 @@ package chapter12;
  * Mail:zhengjun1987@outlook.com
  * Date: 2018/1/5 14:58
  */
-public interface Quackable {
+public interface Quackable extends QuackObservable {
     void quack();
+
+    @Override
+    void registerObserver(Observer observer);
+
+    @Override
+    void notifyAllObservers();
 }
